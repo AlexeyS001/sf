@@ -84,47 +84,41 @@ void main() {
 </div>
 <div id="js-scroll" class="main" data-scroll-container>
     <section class="main">
+		<?php include 'logo.inc.php' ?>
         <div class="title wrapper">
             <h1><?php echo $p ?></h1>
 			<div class="maininfo">
 				<p> имя:
-				<?php echo $name, ' ', $surname . '<br>';
-					  echo 'планета:', ' ', $planet; ?>
-				<br>
-				возраст: <?php  echo $age;   ?> лет </p>
-				
+					<?php echo $name, ' ', $surname . '<br>';
+						  echo 'планета:', ' ', $planet; ?>
+					<br>
+					возраст: <?php echo $age; ?> лет
+				</p>				
 			</div>
-			<?php include 'logo.inc.php' ?>
             <div class="infolist">
 				<div class="knowledge">
-                <p class="small"> 
-					<?php  include 'knowledge.inc.php'; ?>
-					<?php   echo $a, ' ', $b, ' ', $c; ?> <br>
-					<?php
-						$a = 10;
-						$b = 20;
-						$c = $a + $b;
-						echo '10+20=', $c;
-					?>   
-					<br>
-					<?php
-						echo $d;
-					?>
-					<br>
-					<?php
-						echo 'прошло ' . round(microtime(true) - $tStart, 5) . ' сек';
-					?>
-				</p>
+					<p class="small"> 
+						<?php include 'knowledge.inc.php'; ?>
+						<?php echo $a, ' ', $b, ' ', $c; ?> 
+						<br>
+						<?php
+							$a = 10;
+							$b = 20;
+							$c = $a + $b;
+							echo '10+20=', $c; ?>   
+						<br>
+						<?php echo $d; ?>
+						<br>
+						<?php echo 'прошло ' . round(microtime(true) - $tStart, 5) . ' сек'; ?>
+					</p>
 				</div>
                 <p class="small"> <a href="#">Элемент меню один</a></p>
                 <p class="small"> <a href="#">Элемент меню два</a></p>
                 <p class="small"> <a href="#">Элемент меню три</a></p>
-
             </div>
         </div>
     </section>
 	<?php include 'footer.inc.php' ?>
-	
 </div>
 <script src="js/script.js"></script>
 </body>
