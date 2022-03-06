@@ -89,7 +89,7 @@ void main() {
 			<div class="maininfo">
 				<p> имя:
 				<?php echo $name, ' ', $surname . '<br>';
-					  echo 'планета:', ' ', $city; ?>
+					  echo 'планета:', ' ', $planet; ?>
 				<br>
 				возраст: <?php  echo $age;   ?> лет </p>
 				
